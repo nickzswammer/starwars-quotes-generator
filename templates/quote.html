@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='../static/css/style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>
+                    <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Star_Wars_Yellow_Logo.svg/634px-Star_Wars_Yellow_Logo.svg.png" width=150 length=71.5></a> <span class='highlight'>Quotes Generator</span>
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class='underline' href='/'>Home</a></li>
+                    <li><a class="underline" href="/about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id='showcase'>
+        <div class='container'>
+            <h1>Star Wars Quotes Generator</h1>
+            <p>Star Wars fans! Find the quotes you never thought you needed.</p>
+            <form action='/quote'>
+                <button class='center' formaction="/quote">Generate Quote</button>
+              </form>
+        </div>
+    </section>
+
+    <section>
+        <div class='container'>
+            <center><h3>"{{quote}}"</h1></center>
+        </div>
+    </section>
+    <footer id='footer'>
+        <p>Nicholas Zhang, Copyright © 2021</p>
+    </footer>
+</body>
+</html>
